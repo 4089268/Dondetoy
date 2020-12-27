@@ -9,6 +9,9 @@ import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Build;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -145,7 +148,22 @@ public class MainActivity extends AppCompatActivity {
                 }
         }
     }
-
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater menuInflater = getMenuInflater();
+        menuInflater.inflate(R.menu.menu_opciones,menu);
+        return true;
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        switch(item.getItemId()){
+            case R.id.mi_options:
+                Toast.makeText(MainActivity.this, "MenuItem Opciones Seleccionado",Toast.LENGTH_SHORT).show();
+                return true;
+            default:
+                return  super.onOptionsItemSelected(item);
+        }
+    }
 
     private void StartLocationsUpdates(){
         Toast.makeText(this,"Iniciando Servicio",Toast.LENGTH_SHORT).show();

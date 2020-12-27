@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Dondetoy</string>
+    <string name="menuitem_opciones">Opciones</string>
 </resources>
