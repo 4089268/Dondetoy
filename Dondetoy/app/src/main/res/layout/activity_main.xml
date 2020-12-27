@@ -96,13 +96,22 @@
                     android:text="indefinido"/>
             </LinearLayout>
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SERVICIO DETENIDO"
+                android:gravity="center"
+                android:textSize="22dp"
+                android:layout_marginTop="10dp"
+                    android:id="@+id/tv_activo"/>
+
             <Switch
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
                 android:layout_marginTop="10dp"
                 android:layout_gravity="center"
-                android:text="Activar GPS"
+                android:text="Activar Actualizaciones"
                 android:id="@+id/sw_activarGps"/>
 
             <Switch
@@ -130,8 +139,17 @@
                     android:id="@+id/tv_tipoGps"/>
             </LinearLayout>
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Total coordenadas: 0"
+                android:id="@+id/tv_totalCoordenadas"></TextView>
 
-
+            <ListView
+                android:id="@+id/lv_coordenadas"
+                android:layout_width="match_parent"
+                android:layout_height="320dp"></ListView>
         </LinearLayout>
     </ScrollView>
 

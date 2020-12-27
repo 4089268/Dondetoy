@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="4dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lat: ">
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="80dp"
+        android:text="0.0"
+        android:id="@+id/tv_latitud"
+        android:layout_marginRight="10dp">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Long: ">
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:minWidth="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_longitud"
+        android:text="0.0 ">
+    </TextView>
+
+</LinearLayout>
